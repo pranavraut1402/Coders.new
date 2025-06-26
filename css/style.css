@@ -1,0 +1,122 @@
+/* ========== Navbar Styling ========== */
+.navbar {
+  background: linear-gradient(90deg, #4a00e0, #8e2de2);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ========== Headings ========== */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #444;
+  margin-top: 40px;
+}
+
+h3 {
+  margin-top: 40px;
+  text-align: center;
+  color: #222;
+}
+
+/* ========== Paragraph Styling ========== */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: auto;
+  color: #444;
+}
+
+/* ========== Link Styling ========== */
+a {
+  color: #0077cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ========== Contact Icons ========== */
+img {
+  margin: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+/* ========== Responsive for Mobile ========== */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  select {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  img {
+    width: 30px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+    padding: 4px 8px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.main-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px 20px;
+  text-align: center;
+}
