@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coding Library</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -9,44 +10,34 @@
     <div class="navbar">
       <div class="logo">Coding Library</div>
       <div class="nav-links">
-        <a href="index.html">Home</a>
+        <button class="dark-mode-toggle">🌙 Dark Mode</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="sidebar">
+        <a href="index.html" class="home-link">Home</a>
         <a href="resources/java.html">Java</a>
         <a href="resources/python.html">Python</a>
         <a href="resources/cpp.html">C++</a>
         <a href="resources/html.html">HTML</a>
+        <a href="resources/javascript.html">JavaScript</a>
+      </div>
+
+      <div class="main-content">
+        <h1>Welcome to Coding Library</h1>
+        <p>Select a topic from the sidebar to start learning!</p>
       </div>
     </div>
 
-    <div class="main-content">
-      <h1>Coding Library</h1>
-
-      <h3 style="text-align: center">Select Language</h3>
-      <select>
-        <option selected disabled>Language</option>
-        <option value="java">Java</option>
-        <option value="python">Python</option>
-        <option value="cpp">C++</option>
-        <option value="html">HTML</option>
-      </select>
-
-      <h3>Contact Me</h3>
-
-      <!-- GitHub Icon + Link -->
-      <a href="https://github.com/pranavraut1402" target="_blank">
-        <img src="assets/github.png" width="40" alt="GitHub" />
-      </a>
-
-      <!-- Gmail Icon + Link -->
-      <a href="mailto:pranavraut652@gmail.com">
-        <img src="assets/gmail.png" width="40" alt="Gmail" />
-      </a>
-
-      <h3>About Me</h3>
-      <p>
-        Hi, I'm Pranav — a passionate learner and aspiring developer. I created
-        this website to help beginners find good coding resources easily. I love
-        Java, Python, and building fun projects!
-      </p>
-    </div>
+    <script>
+      const btn = document.querySelector(".dark-mode-toggle");
+      btn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        btn.textContent = document.body.classList.contains("dark-mode")
+          ? "☀️ Light Mode"
+          : "🌙 Dark Mode";
+      });
+    </script>
   </body>
 </html>

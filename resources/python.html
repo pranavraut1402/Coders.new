@@ -2,40 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Python Resources</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Resources - Coding Library</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <div class="navbar">
       <div class="logo">Coding Library</div>
       <div class="nav-links">
-        <a href="../index.html">Home</a>
+        <button class="dark-mode-toggle">🌙 Dark Mode</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="sidebar">
+        <a href="../index.html" class="home-link">Home</a>
+
         <a href="java.html">Java</a>
         <a href="python.html">Python</a>
         <a href="cpp.html">C++</a>
         <a href="html.html">HTML</a>
+        <!-- add more links here -->
+      </div>
+
+      <div class="main-content">
+        <h1>Python Resources</h1>
+
+        <h3>Video Tutorials</h3>
+        <ul>
+          <li>
+            <a
+              href="https://youtu.be/t2_Q2BRzeEE?si=QHuKnP016ScC3jgY"
+              target="_blank"
+              >Apna College Python Playlist</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&si=UB6vH_xqbAlBcZBN"
+              target="_blank"
+              >Telusko Python Course</a
+            >
+          </li>
+        </ul>
+
+        <h3>PDF Notes</h3>
+        <ul>
+          <li><a href="#">Download Python Notes (coming soon)</a></li>
+        </ul>
+
+        <h3>Practice Sites</h3>
+        <ul>
+          <li><a href="https://leetcode.com" target="_blank">LeetCode</a></li>
+          <li>
+            <a href="https://www.hackerrank.com" target="_blank">HackerRank</a>
+          </li>
+        </ul>
       </div>
     </div>
 
-    <div class="main-content">
-
-    <h1>Java Resources</h1>
-
-    <h2>PDF Resources</h2>
-    <ul>
-      <li><a href="https://www.javatpoint.com/java-tutorial" target="_blank">JavaTpoint</a></li>
-      <li><a href="https://www.w3schools.com/java/" target="_blank">W3Schools Java</a></li>
-    </ul>
-
-    <h2>Video Tutorial</h2>
-    <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/UmnCZ7-9yDY"
-      title="Java Tutorial - Apna College"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
-
-    <br /><br />
-    <a href="../index.html">← Back to Home</a>
+    <script>
+      const btn = document.querySelector(".dark-mode-toggle");
+      btn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        btn.textContent = document.body.classList.contains("dark-mode")
+          ? "☀️ Light Mode"
+          : "🌙 Dark Mode";
+      });
+    </script>
   </body>
 </html>
