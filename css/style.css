@@ -208,7 +208,7 @@ body.dark-mode .sidebar .home-link {
 }
 /* Hero Section */
 .hero {
-  background: #00b378;
+  background: pink;
   color: #ffffff;
   text-align: center;
   padding: 80px 20px;
@@ -256,7 +256,7 @@ body.dark-mode .sidebar .home-link {
 }
 
 .search-bar button:hover {
-  background: pink;
+  background: blueviolet;
 }
 
 .hero-link a {
